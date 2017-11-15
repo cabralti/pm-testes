@@ -1,0 +1,59 @@
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*
+|----------------------------------------
+| HEADER
+|----------------------------------------
+*/
+header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #b2abb7;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .container h1 {
+    height: 48px;
+    width: 48px;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/logo-header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .container h1 span {
+    visibility: hidden;
+}
+
+header .container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-size: 22px;
+}
+
+header .container ul li {
+    margin-left: 70px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+header .container ul li a {
+    color: #fff;
+}
+
+header .container ul li a img {
+    width: 48px;
+    height: 48px;
+}

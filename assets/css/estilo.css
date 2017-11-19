@@ -13,6 +13,8 @@ h5 {
     padding: 0;
 }
 
+
+
 /*
 |----------------------------------------
 | HEADER
@@ -77,12 +79,13 @@ header .container ul li a img {
 */
 
 .block-topo {
-    margin-top: -110px;
-    padding-top: 240px;
-    padding-bottom: 240px;
+    margin-top: -130px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: url(../img/hero-image.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: #fff;
 }
 
@@ -98,7 +101,7 @@ header .container ul li a img {
 }
 
 .block-topo button {
-    padding: 15px 35px;
+    padding: 15px 25px;
     border-radius: 30px;
     font-size: 22px;
     font-weight: 400;
@@ -109,16 +112,30 @@ header .container ul li a img {
     color: #fff;
 }
 
+
+/*
+|----------------------------------------
+| SECTION: .block-fotos
+|----------------------------------------
+*/
+
 .block-fotos {
-    background-image: url(../img/11-layers.png);
-    background-repeat: no-repeat;
-    
-    padding: 200px;
+    margin-top: -85px;
+    height: 500px;
+    padding: 0px 25px;
+    background: linear-gradient( to bottom, transparent, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url(../img/11-layers.png) top center no-repeat;
 }
 
 
 
+/*
+|----------------------------------------
+| SECTION: .block-video
+|----------------------------------------
+*/
+
 .block-video {
+    margin-top: -175px;
     padding-top: 40px;
     padding-bottom: 40px;
     color: #333;
@@ -138,7 +155,35 @@ header .container ul li a img {
     color: #88939e;
 }
 
+.block-video .block-degrade {
+    position: relative;
+    width: 100%;
+    height: 257px;
+}
 
+.block-video .block-degrade img {
+    position: absolute;
+    height: 257px;
+    top: 0;
+    left: 0;
+}
+
+.block-video .block-degrade .block-degrade__superior {
+    width: 463px;
+    height: 257px;
+    border-radius: 6px;
+    background: rgba(198, 80, 93, 0.6);
+    /*    background-image: linear-gradient(to left, #c6505d 0%, rgba(255, 255, 255, 0) 100%);*/
+    position: relative;
+}
+
+
+
+/*
+|----------------------------------------
+| SECTION: .block-numeros
+|----------------------------------------
+*/
 
 .block-numeros {
     padding-top: 100px;
@@ -158,11 +203,18 @@ header .container ul li a img {
     color: #88939e;
 }
 
+
+
+/*
+|----------------------------------------
+| SECTION: .block-angela
+|----------------------------------------
+*/
+
 .block-angela {
     display: flex;
     width: 100%;
 }
-
 
 .block-angela .card {
     width: 50%;
@@ -176,13 +228,14 @@ header .container ul li a img {
 }
 
 .card-content {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px;
+    text-align: right;
 }
 
 .card-content h4 {
-    width: 435px;
+    width: 65%;
     margin: 0 auto;
+    text-align: left;
     font-size: 38px;
     font-weight: 400;
     color: #fff;
@@ -192,8 +245,8 @@ header .container ul li a img {
     width: 98px;
     height: 98px;
     margin-top: -75px;
+    margin-left: -100px;
     position: absolute;
-    float: right;
 }
 
 .lista-anuncio {
@@ -236,6 +289,12 @@ header .container ul li a img {
 }
 
 
+
+/*
+|----------------------------------------
+| SECTION: .block-cidade
+|----------------------------------------
+*/
 
 .block-cidade {
     padding-top: 100px;
@@ -288,15 +347,26 @@ header .container ul li a img {
 
 
 
-.footer {}
-.footer .row{
+/*
+|----------------------------------------
+| FOOTER
+|----------------------------------------
+*/
+
+.footer {
+    padding-bottom: 40px;
+}
+
+.footer .row {
     padding-bottom: 60px;
 }
-.footer .row .col-sm-4{
+
+.footer .row .col-sm-4 {
     display: flex;
     flex-direction: column;
 }
-.footer select{
+
+.footer select {
     padding: 20px;
     margin-bottom: 18px;
     border-radius: 2px;
@@ -305,33 +375,35 @@ header .container ul li a img {
     font-weight: 400;
     color: #75808c;
 }
-.footer h5{
-     margin-bottom: 10px;
+
+.footer h5 {
+    margin-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
     color: #fb5c68;
 }
-.footer{
-    padding-bottom: 40px;
-}
+
 .footer ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.footer ul li{
+
+.footer ul li {
     font-size: 22px;
     font-weight: 400;
 }
-.footer ul li a{
+
+.footer ul li a {
     color: #88939e;
 }
 
-.footer-list{
+.footer-list {
     display: flex;
     float: right;
 }
-.footer-list li{
+
+.footer-list li {
     margin-left: 35px;
     font-size: 22px;
     font-weight: 400;
@@ -340,8 +412,68 @@ header .container ul li a img {
 
 
 
+/*
+|------------------------------------------
+| MEDIAS QUERIES
+|------------------------------------------
+*/
 
+@media (max-width: 580px) {
+    header {
+        padding: 0;
+    }
+    header .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    header .container h1 {
+        margin: 0 auto;
+    }
+    header .container ul {
+        display: block;
+    }
+    header .container ul li {
+        padding: 0;
+        margin: 0;
+    }
 
+    .block-topo {
+        margin-top: -230px;
+        padding-top: 260px;
+    }
 
+    .lista-anuncio {
+        padding: 60px 0px;
+    }
 
+    .block-cidade .block-cidade__group {
+        width: 80%;
+    }
 
+    .footer-list {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-angela {
+        display: block;
+    }
+    .block-angela .card {
+        width: 100%;
+        height: 500px;
+    }
+    .block-angela .container {
+        width: 100%;
+    }
+    .card-content a {
+        width: 80px;
+        margin-top: -65px;
+        margin-left: -75px;
+        position: absolute;
+    }
+}
